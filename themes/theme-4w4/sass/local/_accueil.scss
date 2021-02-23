@@ -48,6 +48,9 @@ body.home::after
 .accueil
 {
     font-size: clamp(0.8rem, #{"-0.875rem + 8.333vw"}, 1.5rem,);
+}
 
-    ul{list-style-type: none;}
+ul
+{
+    list-style-type: none;
 }

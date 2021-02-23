@@ -1,6 +1,6 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	width: 100vw;
 
 	ul {
 		display: none;
@@ -121,6 +121,7 @@ Version Tablet
 	.main-navigation ul {
 		display: flex;
 		height: 2rem;
+		width: 100vw;
 		justify-content: space-around;
 		position: static;
 		text-align: center;

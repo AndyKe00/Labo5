@@ -1,1 +1,1 @@
-https://andyke00.github.io/Labo3/
+https://andyke00.github.io/TP1/

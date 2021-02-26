@@ -49,13 +49,13 @@
 		<?php
 		if ( is_front_page()) : ?>
 		<section class="carrousel">
-			<div>1</div>
-			<div>2</div>
-			<div>3</div>
+			<div>Sprint 1</div>
+			<div>Sprint 2</div>
+			<div>Sprint 3</div>
 		</section>
-		<button id="un">1</button>
-		<button id="deux">2</button>
-		<button id="trois">3</button>
+		<button id="un">Sprint 1</button>
+		<button id="deux">Sprint 2</button>
+		<button id="trois">Sprint 3</button>
 		<?php endif ?>
 		
 		<!-- Fin carrousel -->

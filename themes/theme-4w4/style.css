@@ -693,7 +693,6 @@ body {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-  display: block;
   width: 100vw;
 }
 
@@ -702,7 +701,7 @@ body {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #003;
+  background-color: #0000c0;
   position: absolute;
   width: 100%;
 }
@@ -1050,7 +1049,7 @@ body {
 
 body.home::after {
   width: 100%;
-  height: 200%;
+  height: 145%;
   content: '';
   position: absolute;
   top: 0;
@@ -1065,7 +1064,7 @@ body.home::after {
 @media (min-width: 800px) {
   body.home::after {
     clip-path: polygon(90% 0, 100% 0, 100% 100%, 70% 100%);
-    background-color: crimson;
+    background-color: #0d2cda;
   }
 }
 
@@ -1085,7 +1084,7 @@ body.home::after {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem);
   font-weight: normal;
-  color: #003;
+  color: #0d2cda;
   margin-top: 0;
 }
 
@@ -1111,17 +1110,19 @@ ul {
   width: 100vw;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 .carrousel div:nth-of-type(1) {
-  background-color: #9f0ec4;
+  background-color: #290ec4;
+  background-image: url(.../images/);
 }
 
 .carrousel div:nth-of-type(2) {
-  background-color: #0ec487;
+  background-color: #0eafc4;
 }
 
 .carrousel div:nth-of-type(3) {
-  background-color: #c40e0e;
+  background-color: #0e5dc4;
 }
 /*# sourceMappingURL=style.css.map */

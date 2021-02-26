@@ -12,12 +12,13 @@
         align-items: center;
         justify-content: center;
         color: black;
+        
 
-        // Respect plus ou moins des couleurs du logo du college
+        // Respect plus ou moins des couleurs du logo du college avec un essai de background-image,
+        // qui ne marche pas :(
         &:nth-of-type(1)
         {
             background-color: rgb(41, 14, 196);
-            background-image: url(.../images/);
         }
 
         &:nth-of-type(2)
@@ -31,3 +32,18 @@
         }
     } // Fin du div
 }
+
+// Ajout de couleurs au hover pour respecter chaque case de sprint
+// Ainsi qu'un espacement entre les boutons 
+
+button
+{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#un:hover {background-color: rgb(41, 14, 196);}
+
+#deux:hover {background-color: rgb(14, 175, 196);}
+
+#trois:hover {background-color: rgb(14, 93, 196);}

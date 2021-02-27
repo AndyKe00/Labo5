@@ -82,6 +82,7 @@ Bouton bORGAR
 	padding: 0rem;
 	border: 0;
 	margin-left: 3rem;
+	background-color: white;
 }
 
 /* .menu-toggle:hover,
@@ -108,7 +109,7 @@ Version Tablet
 ============================================================*/
 @media screen and (min-width: 37.5em) {
 
-	.menu-toggle {
+	.menu-toggle, #burger {
 		display: none;
 	}
 

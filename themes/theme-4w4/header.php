@@ -49,13 +49,15 @@
 		<?php
 		if ( is_front_page()) : ?>
 		<section class="carrousel">
-			<div>Sprint 1</div>
-			<div>Sprint 2</div>
-			<div>Sprint 3</div>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
 		</section>
-		<button id="un">Sprint 1</button>
-		<button id="deux">Sprint 2</button>
-		<button id="trois">Sprint 3</button>
+		<div class="conteneurBtns">
+			<a id="un">1</a>
+			<a id="deux">2</a>
+			<a id="trois">3</a>
+		</div>
 		<?php endif ?>
 		
 		<!-- Fin carrousel -->
@@ -63,11 +65,11 @@
 		<!-- <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32"> -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<section id="burger" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+		<button id="burger" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				<div></div>
 				<div></div>
 				<div></div>
-		</section>
+		</button>
 			<?php
 			wp_nav_menu(
 				array(

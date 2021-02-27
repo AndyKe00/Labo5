@@ -773,6 +773,7 @@ Bouton bORGAR
   padding: 0rem;
   border: 0;
   margin-left: 3rem;
+  background-color: white;
 }
 
 /* .menu-toggle:hover,
@@ -798,7 +799,7 @@ Bouton bORGAR
 Version Tablet
 ============================================================*/
 @media screen and (min-width: 37.5em) {
-  .menu-toggle {
+  .menu-toggle, #burger {
     display: none;
   }
   .main-navigation ul {
@@ -1134,7 +1135,7 @@ ul {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: white;
 }
 
 .carrousel div:nth-of-type(1) {
@@ -1149,20 +1150,47 @@ ul {
   background-color: #0e5dc4;
 }
 
-button {
-  margin-top: 20px;
-  margin-right: 20px;
+/* button
+{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
-#un:hover {
+#un:hover {background-color: rgb(41, 14, 196);}
+
+#deux:hover {background-color: rgb(14, 175, 196);}
+
+#trois:hover {background-color: rgb(14, 93, 196);} */
+.conteneurBtns {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.conteneurBtns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  color: white;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  border-radius: 30%;
+  margin: 0.5rem;
+}
+
+.conteneurBtns a:nth-of-type(1) {
   background-color: #290ec4;
 }
 
-#deux:hover {
+.conteneurBtns a:nth-of-type(2) {
   background-color: #0eafc4;
 }
 
-#trois:hover {
+.conteneurBtns a:nth-of-type(3) {
   background-color: #0e5dc4;
 }
 
@@ -1171,11 +1199,10 @@ button {
 /* Variable Sass */
 /* Bouton Burger */
 #burger {
-  display: block;
   position: relative;
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
+  border-radius: 40%;
   overflow: hidden;
 }
 
@@ -1183,6 +1210,8 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
 }
 
 #burger div:nth-of-type(1) {
@@ -1193,7 +1222,6 @@ button {
 #burger div:nth-of-type(2) {
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
   background-color: #00009e;
-  z-index: -1;
 }
 
 #burger div:nth-of-type(3) {

@@ -794,7 +794,6 @@ Bouton burger
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
-  transform: translateX(0);
 }
 
 /* ---------------------------------------------------------------------------

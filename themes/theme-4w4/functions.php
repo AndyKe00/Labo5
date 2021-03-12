@@ -190,7 +190,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function extraire_cours($query)
+/* function extraire_cours($query)
 {
 	if ($query->is_category('cours'))
 	{
@@ -201,9 +201,9 @@ function extraire_cours($query)
 	
 }
 
-add_action('pre_get_posts', 'extraire_cours');
+add_action('pre_get_posts', 'extraire_cours'); */
 
-/* function extraire_cours_front_page($query){
+function extraire_cours_front_page($query){
 	if( !is_admin() && $query->is_front_page() && $query->is_main_query() ){
 
 	$query->set( 'category_name', 'cours' );
@@ -212,5 +212,5 @@ add_action('pre_get_posts', 'extraire_cours');
 	$query->set('order', 'asc');
 }
 }
-add_action('pre_get_posts','extraire_cours_front_page'); */
+add_action('pre_get_posts','extraire_cours_front_page');
 

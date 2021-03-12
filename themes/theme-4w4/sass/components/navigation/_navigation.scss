@@ -12,7 +12,6 @@
 		padding-left: 0;
 		background-color: blue;
 	
-	
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -83,8 +82,8 @@ Bouton burger
 ------------------------------------------------------------------------------*/
 .menu-toggle {
 	padding :0;
-//	transition : transform .25s;
-//	transform : rotate(0deg);
+	transition : transform .25s;
+	transform : rotate(0deg);
 	border : 0;
 }
 .menu-toggle:hover,
@@ -101,16 +100,18 @@ Bouton burger
     transform: scale(0.99);
 }
 
-/*
+
 .main-navigation.toggled .menu-toggle{
 	transform : rotate(90deg);
 }
-*/
+
 
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	transform: translateX(0);
 }
+
 /* ---------------------------------------------------------------------------
 menu tablet
 ------------------------------------------------------------------------------ */

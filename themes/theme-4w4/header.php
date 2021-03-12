@@ -54,9 +54,12 @@
 			<div>3</div>
 		</section>
 		<div class="conteneurBtns">
-			<a id="un">1</a>
-			<a id="deux">2</a>
-			<a id="trois">3</a>
+			<input type="radio" id="un">
+			<label for="un">1</label>
+			<input type="radio" id="deux">
+			<label for="deux">2</label>
+			<input type="radio" id="trois">
+			<label for="trois">3</label>
 		</div>
 		<?php endif ?>
 		

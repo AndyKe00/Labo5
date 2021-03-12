@@ -768,6 +768,8 @@ Bouton burger
 ------------------------------------------------------------------------------*/
 .menu-toggle {
   padding: 0;
+  transition: transform .25s;
+  transform: rotate(0deg);
   border: 0;
 }
 
@@ -785,14 +787,14 @@ Bouton burger
   transform: scale(0.99);
 }
 
-/*
-.main-navigation.toggled .menu-toggle{
-	transform : rotate(90deg);
+.main-navigation.toggled .menu-toggle {
+  transform: rotate(90deg);
 }
-*/
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
+  transform: translateX(0);
 }
 
 /* ---------------------------------------------------------------------------
@@ -1184,7 +1186,7 @@ ul {
   margin-top: 20px;
 }
 
-.conteneurBtns a {
+.conteneurBtns input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1197,15 +1199,15 @@ ul {
   margin: 0.5rem;
 }
 
-.conteneurBtns a:nth-of-type(1) {
+.conteneurBtns input:nth-of-type(1) {
   background-color: #290ec4;
 }
 
-.conteneurBtns a:nth-of-type(2) {
+.conteneurBtns input:nth-of-type(2) {
   background-color: #0eafc4;
 }
 
-.conteneurBtns a:nth-of-type(3) {
+.conteneurBtns input:nth-of-type(3) {
   background-color: #0e5dc4;
 }
 

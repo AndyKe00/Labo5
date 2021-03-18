@@ -1137,6 +1137,36 @@ ul {
   list-style-type: none;
 }
 
+.liste-cours {
+  display: flex;
+  flex-direction: column;
+}
+
+.liste-cours section {
+  display: flex flex-direction=row;
+  flex-wrap: wrap;
+}
+
+.liste-cours section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  border: 1px solid black;
+}
+
+.liste-cours section article p {
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.liste-cours section article a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* Local / Carrousel
 --------------------------------------------- */
 .carrousel {

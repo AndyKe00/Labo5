@@ -21,24 +21,36 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
+			<section class="liste-cours">
+
 			<?php
 			/* Start the Loop */
-            $precedent = 0;
+
+            $precedent = "XXXXXXXXXXXXXXXX";
 			while ( have_posts() ) :
 				the_post();
-                $titre = get_the_title();
-                $session = substr($titre, 4, 1);
+				$titre_grand = get_the_title();
+				$session = substr($titre_grand, 4, 1);
+				$nbHeure = substr($titre_grand, -4, 3);
+				$titre = substr($titre_grand, 8, -6);
+				$sigle = substr($titre_grand, 0, 7);
+				$typeCours = get_field('type_de_cours');
 
-                if ($precedent != $session)
-                {
-                    echo '<p>Session: ' . $session . '</p>';
-                }
-
-                echo '<p>' . $session . ' ' . $titre . '</p>';
-                $precedent = $session;
-			endwhile;
-		endif;
-		?>
+				if ($precedent != $typeCours) :?>
+				</section><section>
+				<?php endif ?>
+				<article>
+					<p>
+						<p><?php echo $sigle . " - " . $nbHeure . " - " . $typeCours; ?></p>
+						<a href="<?:php echo get_permalink(); ?>"><?php echo $titre; ?></a>
+						<p>Session : <?php echo $session; ?></p>
+					</p>
+				</article>
+			<?php
+				$precedent = $typeCours; 
+				endwhile;?>
+			</section>
+		<?php endif; ?>
 
 	</main><!-- #main -->
 

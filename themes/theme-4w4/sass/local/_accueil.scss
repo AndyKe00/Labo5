@@ -73,9 +73,10 @@ ul
 
     section
     {
-        display: flex
-        flex-direction = row;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        margin: 25px;
 
         article
         {
@@ -83,8 +84,10 @@ ul
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            justify-content: center;
             width: 30%;
             border: 1px solid black;
+            margin: 10px;
     
             p
             {
@@ -94,10 +97,10 @@ ul
     
             a
             {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 font-weight: bold;
                 text-decoration: none;
             }
         } // Fin article
-    }
+    } // Fin section
 }

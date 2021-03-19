@@ -26,7 +26,7 @@ get_header();
 			<?php
 			/* Start the Loop */
 
-            $precedent = "XXXXXXXXXXXXXXXX";
+            $precedent = "XXXXX";
 			while ( have_posts() ) :
 				the_post();
 				$titre_grand = get_the_title();
@@ -37,7 +37,11 @@ get_header();
 				$typeCours = get_field('type_de_cours');
 
 				if ($precedent != $typeCours) :?>
-				</section><section>
+				<?php if ($precedent != "XXXXX"): ?>
+				</section>
+				<?php endif ?>
+
+				<section>
 				<?php endif ?>
 				<article>
 					<p>

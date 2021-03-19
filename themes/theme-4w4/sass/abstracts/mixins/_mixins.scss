@@ -10,9 +10,17 @@
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
 
-@mixin desktop
+@mixin tablet
 {
 	@media (min-width: 800px)
+	{
+		@content;
+	}
+}
+
+@mixin desktop
+{
+	@media (min-width: 1200px)
 	{
 		@content;
 	}

@@ -687,7 +687,7 @@ body {
   margin-left: 0.5rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .site-branding, #primary, #colophon {
     margin-left: 3rem;
   }
@@ -1076,12 +1076,12 @@ menu tablet
 --------------------------------------------- */
 body {
   width: 100vw;
-  height: 100vh;
+  height: 500vh;
 }
 
 body.home {
   width: 100vw;
-  height: 100vh;
+  height: 500vh;
 }
 
 body.home #primary {
@@ -1102,7 +1102,7 @@ body.home::after {
   z-index: -1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   body.home::after {
     clip-path: polygon(90% 0, 100% 0, 100% 100%, 70% 100%);
     background-color: #0d2cda;
@@ -1137,12 +1137,16 @@ ul {
   list-style-type: none;
 }
 
+/* ==========================================
+    Liste des blocs de cours par type_de_cours
+==============================================*/
 .liste-cours {
   display: flex;
   flex-direction: column;
 }
 
 .liste-cours section {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1155,13 +1159,13 @@ ul {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 90%;
   border: 1px solid black;
-  margin: 10px;
+  margin: 1%;
 }
 
 .liste-cours section article p {
-  font-size: .7rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -1169,6 +1173,20 @@ ul {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .liste-cours section article {
+    width: 45%;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .liste-cours section article {
+    width: 30%;
+    margin: 1%;
+  }
 }
 
 /* Local / Carrousel

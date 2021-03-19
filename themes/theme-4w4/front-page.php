@@ -45,7 +45,7 @@ get_header();
 				<?php endif ?>
 				<article>
 					<p>
-						<p><?php echo $sigle . " - " . $nbHeure . " - " . $typeCours; ?></p>
+						<p><?php echo $sigle . " - " . $typeCours . " - " . $nbHeure; ?></p>
 						<a href="<?:php echo get_permalink(); ?>"><?php echo $titre; ?></a>
 						<p>Session : <?php echo $session; ?></p>
 					</p>

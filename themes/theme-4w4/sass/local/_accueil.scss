@@ -92,7 +92,9 @@ ul
             justify-content: center;
             width: 90%;
             border: 1px solid black;
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
             margin: 1%;
+            background-color: cornsilk;
     
             p
             {
@@ -105,8 +107,13 @@ ul
                 font-size: 1.5rem;
                 font-weight: bold;
                 text-decoration: none;
+                text-align: center;
             }
         } // Fin article
+
+        /* =======================================
+        Media queries 
+        ==========================================*/
 
         @include tablet
         {

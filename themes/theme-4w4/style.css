@@ -1356,4 +1356,10 @@ ul {
 .fermeX3 {
   animation: fermeX3 0.25s both;
 }
+
+/* Local / radioBtns
+--------------------------------------------- */
+.conteneurBtns {
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=style.css.map */

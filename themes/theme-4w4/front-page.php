@@ -41,8 +41,12 @@ get_header();
 				</section>
 				<?php endif ?>
 
-				<section>
+				<h2><?php echo $typeCours; ?></h2>
+
+				<section class="<?php echo $typeCours; ?>">
+
 				<?php endif ?>
+
 				<article>
 					<p>
 						<p><?php echo $sigle . " - " . $typeCours . " - " . $nbHeure; ?></p>

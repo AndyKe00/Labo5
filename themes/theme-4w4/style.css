@@ -1145,6 +1145,11 @@ ul {
   flex-direction: column;
 }
 
+.liste-cours h2 {
+  margin-left: 50%;
+  font-size: 2em;
+}
+
 .liste-cours section {
   width: 100%;
   display: flex;

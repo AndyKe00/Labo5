@@ -1431,25 +1431,20 @@ ANNIMATIONS PAR TYPE DE COURS
 }
 
 .conteneurBtns label {
-  background-color: #0004ff;
   border-radius: 100%;
   margin: 1%;
-}
-
-.conteneurBtns label:nth-of-type(1) {
-  background-color: #290ec4;
   transition: 0.3s ease-in-out;
 }
 
 .conteneurBtns label:nth-of-type(1):hover {
-  background-color: white;
+  background-color: #290ec4;
 }
 
-.conteneurBtns label:nth-of-type(2) {
+.conteneurBtns label:nth-of-type(2):hover {
   background-color: #0eafc4;
 }
 
-.conteneurBtns label:nth-of-type(3) {
+.conteneurBtns label:nth-of-type(3):hover {
   background-color: #0e5dc4;
 }
 /*# sourceMappingURL=style.css.map */

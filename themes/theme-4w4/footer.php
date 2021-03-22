@@ -25,7 +25,7 @@
 				// printf( esc_html__( 'Theme: %1$s by %2$s.', 'theme-4w4' ), 'theme-4w4', '<a href="http://underscores.me/">Andy Ke</a>' );
 				?>
 
-			<a href='https://cmaisonneuve.qc.ca'>Collège de Maisonneuve</a>
+			<p>Andy Ke | Techniques d'intégration multimédia | 4W4</p>
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

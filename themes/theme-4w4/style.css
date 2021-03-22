@@ -1171,7 +1171,8 @@ ul {
   border: 1px solid black;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
   margin: 1%;
-  background-color: cornsilk;
+  background-color: blanchedalmond;
+  transition: 0.3s ease-in-out;
 }
 
 .liste-cours section article p {
@@ -1198,6 +1199,29 @@ ul {
     width: 30%;
     margin: 1%;
   }
+}
+
+/* ================================
+ANNIMATIONS PAR TYPE DE COURS
+==================================*/
+.Web article:hover {
+  background-color: #0a40d4;
+}
+
+.Spécifique article:hover {
+  background-color: #0a79d4;
+}
+
+.Jeu article:hover {
+  background-color: #0a83d4;
+}
+
+.Image article:hover {
+  background-color: #0aacd4;
+}
+
+.Conception article:hover {
+  background-color: #0acdd4;
 }
 
 /* Local / Carrousel

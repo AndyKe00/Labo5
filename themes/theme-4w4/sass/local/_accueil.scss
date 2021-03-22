@@ -100,7 +100,8 @@ ul
             border: 1px solid black;
             box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
             margin: 1%;
-            background-color: cornsilk;
+            background-color: blanchedalmond;
+            transition: 0.3s ease-in-out;
     
             p
             {
@@ -141,4 +142,33 @@ ul
 
     } // Fin section
     
+}
+
+/* ================================
+ANNIMATIONS PAR TYPE DE COURS
+==================================*/
+
+.Web article:hover
+{
+    background-color: rgb(10, 64, 212);
+}
+
+.Spécifique article:hover
+{
+    background-color: rgb(10, 121, 212);
+}
+
+.Jeu article:hover
+{
+    background-color: rgb(10, 131, 212);
+}
+
+.Image article:hover
+{
+    background-color: rgb(10, 172, 212);
+}
+
+.Conception article:hover
+{
+    background-color: rgb(10, 205, 212);
 }

@@ -182,3 +182,18 @@ ANNIMATIONS PAR TYPE DE COURS
     transform: scale(1.2);
     transform: skewX(1deg);
 }
+
+/* =================================
+Animations des titres des cours
+==================================*/
+
+h2
+{
+    width: 20%;
+    transition: 0.5s;
+
+    &:hover
+    {
+        transform: scaleY(2);
+    }
+}

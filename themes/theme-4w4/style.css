@@ -1234,6 +1234,18 @@ ANNIMATIONS PAR TYPE DE COURS
   transform: skewX(1deg);
 }
 
+/* =================================
+Animations des titres des cours
+==================================*/
+h2 {
+  width: 20%;
+  transition: 0.5s;
+}
+
+h2:hover {
+  transform: scaleY(2);
+}
+
 /* Local / Carrousel
 --------------------------------------------- */
 .carrousel {

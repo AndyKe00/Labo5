@@ -151,24 +151,34 @@ ANNIMATIONS PAR TYPE DE COURS
 .Web article:hover
 {
     background-color: rgb(10, 64, 212);
+    transform: scale(1.2);
+    transform: skewX(10deg);
 }
 
 .Spécifique article:hover
 {
     background-color: rgb(10, 121, 212);
+    transform: scale(1.2);
+    transform: skewY(10deg);
 }
 
 .Jeu article:hover
 {
     background-color: rgb(10, 131, 212);
+    transform: scale(1.2);
+    transform: skewX(10deg);
 }
 
 .Image article:hover
 {
     background-color: rgb(10, 172, 212);
+    transform: scale(1.2);
+    transform: skewY(10deg);
 }
 
 .Conception article:hover
 {
     background-color: rgb(10, 205, 212);
+    transform: scale(1.2);
+    transform: skewX(10deg);
 }

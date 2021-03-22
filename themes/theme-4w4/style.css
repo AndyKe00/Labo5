@@ -1206,22 +1206,32 @@ ANNIMATIONS PAR TYPE DE COURS
 ==================================*/
 .Web article:hover {
   background-color: #0a40d4;
+  transform: scale(1.2);
+  transform: skewX(10deg);
 }
 
 .Spécifique article:hover {
   background-color: #0a79d4;
+  transform: scale(1.2);
+  transform: skewY(10deg);
 }
 
 .Jeu article:hover {
   background-color: #0a83d4;
+  transform: scale(1.2);
+  transform: skewX(10deg);
 }
 
 .Image article:hover {
   background-color: #0aacd4;
+  transform: scale(1.2);
+  transform: skewY(10deg);
 }
 
 .Conception article:hover {
   background-color: #0acdd4;
+  transform: scale(1.2);
+  transform: skewX(10deg);
 }
 
 /* Local / Carrousel

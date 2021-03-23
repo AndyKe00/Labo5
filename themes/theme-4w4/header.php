@@ -48,7 +48,7 @@
 		<!-- Début carrousel -->
 		<?php
 		if ( is_front_page()) : ?>
-		<section class="carrousel">
+		<!-- <section class="carrousel">
 			<div>1</div>
 			<div>2</div>
 			<div>3</div>
@@ -65,7 +65,7 @@
 
 			<label class="radio" for="trois">
 				<input type="radio" name="radio" id="trois">
-			</label>
+			</label> -->
 		</div>
 		<?php endif ?>
 		

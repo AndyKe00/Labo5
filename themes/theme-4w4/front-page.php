@@ -9,6 +9,28 @@
 
 get_header();
 ?>
+
+		<section class="carrousel">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</section>
+
+		<div class="conteneurBtns">
+
+			<label class="radio" for="un">
+				<input type="radio" name="radio" id="un" checked>
+			</label>
+
+			<label class="radio" for="deux">
+				<input type="radio" name="radio" id="deux">
+			</label>
+
+			<label class="radio" for="trois">
+				<input type="radio" name="radio" id="trois">
+			</label>
+		</div>
+		
 //////////////////////////// front-page.PHP
 	<main id="primary" class="site-main">
 

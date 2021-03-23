@@ -1459,4 +1459,77 @@ h2:hover {
 .conteneurBtns label:nth-of-type(3):hover {
   background-color: #0e5dc4;
 }
+
+/* Local / Deuxieme Carrousel
+--------------------------------------------- */
+.carrousel {
+  display: flex;
+  width: 300vw;
+  height: 20vh;
+  transition: transform 0.5s;
+}
+
+.carrousel div {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #290ec4;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #0eafc4;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #0e5dc4;
+}
+
+/* button
+{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#un:hover {background-color: rgb(41, 14, 196);}
+
+#deux:hover {background-color: rgb(14, 175, 196);}
+
+#trois:hover {background-color: rgb(14, 93, 196);} */
+.conteneurBtns {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.conteneurBtns input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  color: white;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  border-radius: 30%;
+  margin: 0.5rem;
+}
+
+.conteneurBtns input:nth-of-type(1) {
+  background-color: #290ec4;
+}
+
+.conteneurBtns input:nth-of-type(2) {
+  background-color: #0eafc4;
+}
+
+.conteneurBtns input:nth-of-type(3) {
+  background-color: #0e5dc4;
+}
 /*# sourceMappingURL=style.css.map */

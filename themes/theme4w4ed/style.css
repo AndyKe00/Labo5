@@ -523,11 +523,11 @@ a {
 }
 
 a:visited {
-  color: #40b349;
+  color: #5300da;
 }
 
 a:hover, a:focus, a:active {
-  color: #df6f5b;
+  color: white;
 }
 
 a:focus {
@@ -816,14 +816,26 @@ menu tablet
   }
   .main-navigation.toggled ul li:hover ul,
   .main-navigation ul li:hover ul {
-    display: block;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 300px;
-    height: 500px;
+    animation: anim_sous_menu 0.5s both cubic-bezier(0, 0.65, 0.41, 0.99);
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
     display: none;
+  }
+}
+
+@keyframes anim_sous_menu {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
   }
 }
 
@@ -1085,6 +1097,10 @@ body.home #primary {
   width: 100vw;
 }
 
+body.home #primary h1 {
+  text-align: center;
+}
+
 body.home::after {
   width: 100%;
   height: 500vh;
@@ -1151,6 +1167,10 @@ body.home::after {
   flex-direction: column;
 }
 
+.list-cours h2 {
+  text-align: center;
+}
+
 .list-cours section.bloc {
   display: flex;
   flex-direction: row;
@@ -1176,6 +1196,7 @@ body.home::after {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 @media (min-width: 800px) {
@@ -1222,14 +1243,14 @@ body.home::after {
 --------------------------------------------- */
 .carrousel-2 {
   display: flex;
-  width: 600vw;
+  width: 300vw;
   height: 30vh;
   transition: transform .5s;
   flex-wrap: nowrap;
 }
 
 .carrousel-2 .slide__conteneur {
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1265,7 +1286,7 @@ body.home::after {
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #be4343;
+  background-color: #0096db;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
@@ -1284,6 +1305,18 @@ body.home::after {
 
 .ctrl-carrousel input {
   margin: 2rem;
+}
+
+.ctrl-carrousel input:nth-of-type(4) {
+  display: none;
+}
+
+.ctrl-carrousel input:nth-of-type(5) {
+  display: none;
+}
+
+.ctrl-carrousel input:nth-of-type(6) {
+  display: none;
 }
 
 /* Local/burger

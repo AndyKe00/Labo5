@@ -23,12 +23,15 @@ get_header();
 				<?php
 				/* Start the Loop */
 				$precedent = "XXXXXXX";
+				$ctrl_radio = '';
 				while ( have_posts() ) :
 					the_post();
 					// 582-1J1 Animation et interactivité en jeu (75h)
 					convertir_tableau($tPropriété);
 					if ($precedent != $tPropriété['typeCours']): ?>
+
 					  	<?php if ($precedent != "XXXXXXX"): ?>
+
 							</section>
 						<?php endif;?>
 						<?php if (in_array( $precedent, ['Web', 'Jeu', 'Spécifique', 'Conception', 'Image 2d/3d'])): ?>	

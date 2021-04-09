@@ -1,6 +1,11 @@
 .conteneurBtns
 {
     margin-bottom: 15px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
     
     label
     {
@@ -32,6 +37,20 @@
             {
                 background-color: rgb(14, 93, 196);
             }
+        }
+
+        input
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            color: white;
+            width: 1rem;
+            height: 1rem;
+            padding: 1rem;
+            border-radius: 30%;
+            margin: 0.5rem;
         }
     }
 }

@@ -10,57 +10,6 @@
 get_header();
 ?>
 
-
-		<section class="carrousel">
-			<article class="sliderConteneur">
-				<div class="slide">
-					<img src="http://localhost/wordpress/wp-content/uploads/2021/03/pexels-miguel-a-padrinan-1591060.jpg" alt="Web" loading= "lazy" width="150" height="100">
-						<div class="slide_info">
-							<p>582-1W1 - Web - 75h</p>
-							<a href="http://localhost/wordpress/582-1w1-mise-en-page-web-75h/">Mise en page Web</a>
-							<p>Session : 1</p>
-						</div>
-				</div>
-			</article>
-
-			<article class="sliderConteneur">
-				<div class="slide">
-					<img src="" alt="">
-						<div class="slide_info">
-							<p>582-1W1 - Web - 75h</p>
-							<a href="http://localhost/wordpress/582-1w1-mise-en-page-web-75h/">Mise en page Web</a>
-							<p>Session : 1</p>
-						</div>
-				</div>
-			</article>
-
-			<article class="sliderConteneur">
-				<div class="slide">
-					<img src="" alt="">
-						<div class="slide_info">
-							<p>582-1W1 - Web - 75h</p>
-							<a href="http://localhost/wordpress/582-1w1-mise-en-page-web-75h/">Mise en page Web</a>
-							<p>Session : 1</p>
-						</div>
-				</div>
-			</article>
-
-		</section>
-
-		<div class="conteneurBtns">
-			<label class="radio" for="un">
-				<input type="radio" name="radio" id="un" checked>
-			</label>
-
-			<label class="radio" for="deux">
-				<input type="radio" name="radio" id="deux">
-			</label>
-
-			<label class="radio" for="trois">
-				<input type="radio" name="radio" id="trois">
-			</label>
-		</div>
-
 //////////////////////////// front-page.PHP
 	<main id="primary" class="site-main">
 
@@ -79,6 +28,7 @@ get_header();
 			/* Start the Loop */
 
             $precedent = "XXXXX";
+			$chaine_bouton_radio = '';
 			while ( have_posts() ) :
 				the_post();
 				convertir_tableau($tPropriete);
@@ -86,25 +36,33 @@ get_header();
 				if ($precedent != $tPropriete['typeCours']) :?>
 				<?php if ($precedent != "XXXXX"): ?>
 				</section>
-				
-				<?php endif ?>
+					<?php if ($precedent == "Web") : ?>
+					<div class="conteneurBtns">
+					<?php echo $chaine_bouton_radio; ?>
+					</div>
+
+				<?php endif; ?>
+				<?php endif; ?>
 
 				<h2><?php echo $tPropriete['typeCours']; ?></h2>
 
-				<section class="<?php echo $tPropriete['typeCours']; ?>">
+				<section <?php echo ($tPropriete['typeCours'] == 'Web' ? 'class="carrousel-2"':'class="bloc"'); ?> id="animations">
 				
 				<?php endif ?>
 				
-			<?php
-				get_template_part('template-parts/content', 'bloc');
+					<?php if ($tPropriete['typeCours'] == "Web") :
+					get_template_part('template-parts/content', 'carrousel');
+					$chaine_bouton_radio .= '<label class="radio" for="un">
+					<input type="radio" name="radio" id="un" checked>
+					</label>';
+
+					else :
+					get_template_part('template-parts/content', 'bloc');
+
+					endif;
 				$precedent = $tPropriete['typeCours']; 
 				endwhile;?>
 			</section>
-				<?php rewind_posts(); ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-				<h3>- <?php echo get_the_title(); ?></h3>
-				<?php endwhile; ?>
-
 		<?php endif; ?>
 
 	</main><!-- #main -->

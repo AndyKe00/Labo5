@@ -1,22 +1,22 @@
 @charset "UTF-8";
 /*!
-Theme Name: theme-4w4
+Theme Name: theme4w4ed
 Theme URI: http://underscores.me/
-Author: Andy Ke
-Author URI: http://underscores.me/
+Author: Eddy martin
+Author URI: http://referenced.ca
 Description: Description
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: theme-4w4
+Text Domain: theme4w4ed
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-theme-4w4 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+theme4w4ed is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -523,11 +523,11 @@ a {
 }
 
 a:visited {
-  color: #800080;
+  color: #40b349;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #df6f5b;
 }
 
 a:focus {
@@ -539,15 +539,15 @@ a:hover, a:active {
 }
 
 .main-navigation a {
-  color: #bbce10;
+  color: #d4d3bf;
 }
 
 .main-navigation a:visited {
-  color: #fbff00;
+  color: #f3e7b2;
 }
 
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
-  color: #8cd405;
+  color: #ffffff;
 }
 
 .main-navigation a:focus {
@@ -559,15 +559,15 @@ a:hover, a:active {
 }
 
 .site-title a {
-  color: #1023ce;
+  color: #0a3668;
 }
 
 .site-title a:visited {
-  color: #1eff00;
+  color: #1a2980;
 }
 
 .site-title a:hover, .site-title a:focus, .site-title a:active {
-  color: #03f5d5;
+  color: #1b5ca7;
 }
 
 .site-title a:focus {
@@ -678,13 +678,13 @@ body {
 			.site-branding
 				.site-title
 				.site-description
-			#site-navigation - .main-navigation
+			#site-navigation - .main-navigation	
 		#primary - .site-main
-		#secondary - .widget-area
+		#secondary -  .widget-area
 		#colophon - .site-footer
 */
 .site-branding, #primary, #colophon {
-  margin-left: 0.5rem;
+  margin-left: .5rem;
 }
 
 @media (min-width: 1200px) {
@@ -701,7 +701,7 @@ body {
 .main-navigation {
   display: block;
   width: 100vw;
-  /* Nav-Menu (ul principal) */
+  /* nav-menu  (ul principal) */
 }
 
 .main-navigation ul {
@@ -711,23 +711,24 @@ body {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: blue;
-  /* Sub-Menu */
+  background-color: #000;
+  text-align: left;
+  left: 0;
+  /* sub-menu */
 }
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  /* float: left; */
   position: absolute;
   top: 100%;
-  transition: left 0.5s;
+  transition: left .5s;
   left: -999em;
   z-index: 99999;
 }
 
 .main-navigation ul ul a {
   width: 100%;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 .main-navigation ul li:hover > ul,
@@ -762,20 +763,19 @@ body {
   padding: .5rem;
 }
 
-/* Fin de nav */
+/* fin de main-navigation */
 /* -----------------------------------------------------------------------------
 Bouton burger 
 ------------------------------------------------------------------------------*/
 .menu-toggle {
   padding: 0;
-  transition: transform .25s;
-  transform: rotate(0deg);
   border: 0;
+  background: #fff;
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background: #fafbfc;
+  background: #fff;
 }
 
 .menu-toggle:focus {
@@ -787,10 +787,11 @@ Bouton burger
   transform: scale(0.99);
 }
 
-.main-navigation.toggled .menu-toggle {
-  transform: rotate(90deg);
+/*
+.main-navigation.toggled .menu-toggle{
+	transform : rotate(90deg);
 }
-
+*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
@@ -818,7 +819,7 @@ menu tablet
     display: block;
     position: absolute;
     width: 300px;
-    height: 425px;
+    height: 500px;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
@@ -826,8 +827,8 @@ menu tablet
   }
 }
 
-/* -------------------------------------------------------------
---------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------- */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -1072,13 +1073,8 @@ menu tablet
   margin-bottom: 1.5em;
 }
 
-/* Local / Accueil
+/* Local/accueil
 --------------------------------------------- */
-body {
-  width: 100vw;
-  height: 500vh;
-}
-
 body.home {
   width: 100vw;
   height: 500vh;
@@ -1091,27 +1087,27 @@ body.home #primary {
 
 body.home::after {
   width: 100%;
-  height: 150%;
+  height: 500vh;
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  clip-path: polygon(90% 100%, 100% 100%, 70% 100%);
+  clip-path: polygon(100% 90%, 100% 100%, 70% 100%);
+  background-color: rgba(121, 183, 241, 0.753);
   z-index: -1;
 }
 
 @media (min-width: 1200px) {
   body.home::after {
     clip-path: polygon(90% 0, 100% 0, 100% 100%, 70% 100%);
-    background-color: #0d2cda;
   }
 }
 
 .site-title {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem);
+  font-size: clamp(0.9rem, -0.875rem + 5.333vw, 2.5rem);
   font-weight: bold;
   color: #003;
   margin-bottom: 0;
@@ -1125,193 +1121,224 @@ body.home::after {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem);
   font-weight: normal;
-  color: #0d2cda;
+  color: #003;
   margin-top: 0;
 }
 
-.accueil {
-  font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem);
+.home .entry-header {
+  font-size: clamp(0.8rem, -0.875rem + 8.333vw, 3rem);
 }
 
-ul {
-  list-style-type: none;
+/*
+.accueil{
+
+    font-size: clamp(.8rem, -0.875rem + 8.333vw, 2rem);
+    ul{
+        list-style-type: none;
+    }
+
+    img{
+        display : block;
+        border-radius : 50%;
+        border : 1px solid #003
+     
+    }
 }
 
-/* ==========================================
-    Liste des blocs de cours par type_de_cours
-==============================================*/
-.liste-cours {
+*/
+.list-cours {
   display: flex;
   flex-direction: column;
 }
 
-.liste-cours h2 {
-  margin-left: 50%;
-  font-size: 2em;
-}
-
-.liste-cours section.bloc {
-  width: 100%;
+.list-cours section.bloc {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 25px;
-  /* =======================================
-        Media queries 
-        ==========================================*/
 }
 
-.liste-cours section.bloc article {
+.list-cours section.bloc article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 90%;
-  border: 1px solid black;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  width: 94%;
   margin: 1%;
-  background-color: blanchedalmond;
-  transition: 0.3s ease-in-out;
+  border: 1px solid #aaa;
 }
 
-.liste-cours section.bloc article p {
-  font-size: 1rem;
+.list-cours section.bloc article p {
+  font-size: .7rem;
   font-weight: bold;
 }
 
-.liste-cours section.bloc article a {
+.list-cours section.bloc article a {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
 }
 
 @media (min-width: 800px) {
-  .liste-cours section.bloc article {
-    width: 45%;
-    margin: 1%;
+  .list-cours section.bloc article {
+    width: 46%;
   }
 }
 
 @media (min-width: 1200px) {
-  .liste-cours section.bloc article {
-    width: 30%;
-    margin: 1%;
+  .list-cours section.bloc article {
+    width: 31%;
   }
 }
 
-/* ================================
-ANNIMATIONS PAR TYPE DE COURS
-==================================*/
-.bloc article:hover {
-  background-color: #0a40d4;
-  transform: scale(1.2);
-  transform: skewX(1deg);
-}
-
-.bloc article:hover {
-  background-color: #0a79d4;
-  transform: scale(1.2);
-  transform: skewY(1deg);
-}
-
-.Jeu article:hover {
-  background-color: #0a83d4;
-  transform: scale(1.2);
-  transform: skewX(1deg);
-}
-
-.Image article:hover {
-  background-color: #0aacd4;
-  transform: scale(1.2);
-  transform: skewY(1deg);
-}
-
-.Conception article:hover {
-  background-color: #0acdd4;
-  transform: scale(1.2);
-  transform: skewX(1deg);
-}
-
-/* =================================
-Animations des titres des cours
-==================================*/
-h2 {
-  width: 20%;
-  transition: 0.5s;
-}
-
-h2:hover {
-  transform: scaleY(2);
-}
-
-/* Local / Carrousel
+/* Local/carrousel
 --------------------------------------------- */
 .carrousel {
   display: flex;
   width: 300vw;
   height: 20vh;
-  transition: transform 0.5s;
+  transition: transform .5s;
 }
 
 .carrousel div {
-  display: flex;
   width: 100vw;
+  display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
-/* Local / burger
+.carrousel div:nth-of-type(1) {
+  background-color: #be4343;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #4dbe43;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #435abe;
+}
+
+/* Local/carrousel
 --------------------------------------------- */
-/* Variable Sass */
-/* Bouton Burger */
+.carrousel-2 {
+  display: flex;
+  width: 600vw;
+  height: 30vh;
+  transition: transform .5s;
+  flex-wrap: nowrap;
+}
+
+.carrousel-2 .slide__conteneur {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrousel-2 .slide__conteneur .slide {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carrousel-2 .slide__conteneur .slide img {
+  display: block;
+  margin: 2%;
+}
+
+.carrousel-2 .slide__conteneur .slide .slide__info {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel-2 .slide__conteneur .slide .slide__info p {
+  font-size: .8rem;
+}
+
+.carrousel-2 .slide__conteneur .slide .slide__info a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
+  background-color: #be4343;
+}
+
+.carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
+  background-color: #4dbe43;
+}
+
+.carrousel-2 .slide__conteneur .slide:nth-of-type(3) {
+  background-color: #435abe;
+}
+
+.ctrl-carrousel {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.ctrl-carrousel input {
+  margin: 2rem;
+}
+
+/* Local/burger
+--------------------------------------------- */
+/* ---------------------------------------------------------------------------
+Bouton burger
+------------------------------------------------------------------------------ */
 #burger {
+  background: #fff;
   position: relative;
   width: 2rem;
   height: 2rem;
-  border-radius: 40%;
+  border: none;
+  border-radius: 50%;
   overflow: hidden;
 }
 
 #burger div {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #burger div:nth-of-type(1) {
   clip-path: polygon(0 15%, 100% 15%, 100% 25%, 0 25%);
-  background-color: #09ff00;
+  background-color: #b3ff00;
 }
 
 #burger div:nth-of-type(2) {
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-  background-color: #00009e;
+  background-color: #0011ff;
 }
 
 #burger div:nth-of-type(3) {
   clip-path: polygon(0 75%, 100% 75%, 100% 85%, 0 85%);
-  background-color: #00498d;
+  background-color: #ff009d;
 }
 
-/* Animations de la première barre bar1 */
+/* -----------------------------------------------------------------------------
+Animation de la première barre bar1
+-------------------------------------------------------------------------------- */
 @keyframes ouvrirX1 {
   0% {
     clip-path: polygon(0 15%, 100% 15%, 100% 25%, 0 25%);
   }
   100% {
-    /* clip-path: polygon(5% -5%, 105% 95%, 95% 105%, -5% 5%); */
     clip-path: polygon(7% -7%, 107% 93%, 93% 107%, -7% 7%);
   }
 }
 
 @keyframes fermeX1 {
   0% {
-    clip-path: polygon(5% -5%, 105% 95%, 95% 105%, -5% 5%);
+    clip-path: polygon(7% -7%, 107% 93%, 93% 107%, -7% 7%);
   }
   100% {
     clip-path: polygon(0 15%, 100% 15%, 100% 25%, 0 25%);
@@ -1326,7 +1353,9 @@ h2:hover {
   animation: fermeX1 0.25s both;
 }
 
-/* Animations de la deuxième barre bar2 */
+/* -----------------------------------------------------------------------------
+Animation de la deuxième  barre bar2
+-------------------------------------------------------------------------------- */
 @keyframes ouvrirX2 {
   0% {
     clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
@@ -1353,13 +1382,15 @@ h2:hover {
   animation: fermeX2 0.25s both;
 }
 
-/* Animations de la troisième barre bar3 */
+/* -----------------------------------------------------------------------------
+Animation de la dtroisième  barre bar3
+-------------------------------------------------------------------------------- */
 @keyframes ouvrirX3 {
   0% {
     clip-path: polygon(0 75%, 100% 75%, 100% 85%, 0 85%);
   }
   100% {
-    clip-path: polygon(-7% 88%, 88% -7%, 98% 7%, 7% 98%);
+    clip-path: polygon(-5% 95%, 95% -5%, 105% 5%, 5% 105%);
   }
 }
 
@@ -1378,98 +1409,5 @@ h2:hover {
 
 .fermeX3 {
   animation: fermeX3 0.25s both;
-}
-
-/* Local / radioBtns
---------------------------------------------- */
-.conteneurBtns {
-  margin-bottom: 15px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.conteneurBtns label {
-  border-radius: 100%;
-  margin: 1%;
-  transition: 0.3s ease-in-out;
-}
-
-.conteneurBtns label:nth-of-type(1):hover {
-  background-color: #290ec4;
-}
-
-.conteneurBtns label:nth-of-type(2):hover {
-  background-color: #0eafc4;
-}
-
-.conteneurBtns label:nth-of-type(3):hover {
-  background-color: #0e5dc4;
-}
-
-.conteneurBtns label input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  color: white;
-  width: 1rem;
-  height: 1rem;
-  padding: 1rem;
-  border-radius: 30%;
-  margin: 0.5rem;
-}
-
-/* Local / Deuxieme Carrousel
---------------------------------------------- */
-.carrousel-2 {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 600vw;
-  height: 20vh;
-  transition: transform 0.5s;
-}
-
-.carrousel-2 .sliderConteneur {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.carrousel-2 .sliderConteneur .slide {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (min-width: 800px) {
-  .carrousel-2 .sliderConteneur .slide {
-    width: 60%;
-  }
-}
-
-.carrousel-2 .sliderConteneur .slide img {
-  display: block;
-  margin: 2%;
-}
-
-.carrousel-2 .sliderConteneur .slide .slide_infos {
-  display: flex;
-  flex-direction: column;
-}
-
-.carrousel-2 .sliderConteneur .slide .slide_infos p {
-  font-size: 0.8rem;
-}
-
-.carrousel-2 .sliderConteneur .slide .slide_infos a {
-  font-size: 1.2rem;
-  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

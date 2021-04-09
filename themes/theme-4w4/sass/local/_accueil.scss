@@ -81,7 +81,7 @@ ul
         font-size: 2em;
     }
 
-    section
+    section.bloc
     {
         width: 100%;
         display: flex;
@@ -148,14 +148,14 @@ ul
 ANNIMATIONS PAR TYPE DE COURS
 ==================================*/
 
-.Web article:hover
+.bloc article:hover
 {
     background-color: rgb(10, 64, 212);
     transform: scale(1.2);
     transform: skewX(1deg);
 }
 
-.Spécifique article:hover
+.bloc article:hover
 {
     background-color: rgb(10, 121, 212);
     transform: scale(1.2);

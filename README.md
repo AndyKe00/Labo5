@@ -12,4 +12,6 @@ mardi gr.1
 au cours de notre session. J'ai rajouté plusieurs animations pour donner un flair qui me plait.
 
 **Adresse WebDev**
+L'adresse ne marche pas de mon bord
+
 https://e1740707.webdev.cmaisonneuve.qc.ca/4w4/Tp4w4
